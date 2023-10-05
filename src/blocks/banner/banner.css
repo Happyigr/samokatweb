@@ -1,40 +1,55 @@
 .banner {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  margin-bottom: 15rem;
+}
+
+/* fix the samokat */
+.banner__bike {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: -1;
+  flex-shrink: 0;
+}
+
+.banner__bike-image {
+  width: 49vw;
 }
 
 .banner__content {
+  grid-area: 1/1/2/3;
   display: flex;
   flex-direction: column;
 }
+
 .banner__content-text {
-}
-.banner__content-text-info {
-  color: #ff4c0d;
-  margin-top: 1rem;
-  white-space: pre-wrap;
-  font-size: 2vw;
+  display: flex;
+  flex-direction: column;
 }
 
 .banner__content-text-header {
+  white-space: pre-wrap;
+  align-self: stretch;
   color: white;
-  font-weight: 400;
-  font-size: 6vw;
-  font-weight: bold;
+  font-weight: 600;
+  font-size: 110px;
 }
-.mode-button {
-  background-color: white;
-  border: 0;
-  border-radius: 40px;
-  padding: 1rem 2rem;
-  cursor: pointer;
-  font-weight: bold;
-  font-size: large;
+
+.banner__content-text-info {
+  color: #ff4c0d;
+  margin-top: 1rem;
+  font-weight: 500;
+  white-space: pre-wrap;
+  font-size: 40px;
 }
 
 .banner__content-button {
   display: grid;
-  margin-top: 2rem;
+  margin-top: 5rem;
   border: solid 5px white;
   border-radius: 50px;
   width: 20rem;
@@ -44,7 +59,7 @@
   grid-area: 1 / 1;
   z-index: -1;
   border-radius: 49px;
-  border: solid 2rem white;
+  /* border: solid 1rem white; */
   background-color: white;
   height: 100%;
   width: 50%;
@@ -57,27 +72,15 @@
   width: 100%;
   display: flex;
   justify-content: space-around;
+  padding: 1.5rem 0;
+  font-size: 18px;
+  font-weight: 700;
 }
 
 .white-text {
-  font-weight: 700;
-  padding: 2rem 3rem;
   color: black;
 }
 
 .black-text {
-  font-weight: 700;
-  padding: 2rem 3rem;
   color: white;
-}
-
-.banner__bike {
-  position: absolute;
-  z-index: -1;
-  top: 0;
-  right: 0;
-}
-
-.banner__bike-image {
-  width: 50vw;
 }

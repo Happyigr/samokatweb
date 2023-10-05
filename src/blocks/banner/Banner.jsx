@@ -3,7 +3,7 @@ import "./banner.css";
 import bike from "./../../assets/bike.png";
 
 const text = {
-  main: "Стильный электросамокат с мощным аккумулятором",
+  main: "Стильный электросамокат\nс мощным аккумулятором",
   info: "Улучшенная производительность\nдля дальних путешествий.\nРаботает так же просто,\nкак и выглядит.",
 };
 
@@ -16,10 +16,7 @@ export default function Banner() {
             <h1 className='banner__content-text-header'>{text.main}</h1>
             <h2 className='banner__content-text-info'>{text.info}</h2>
           </div>
-          {/* <div className='banner__content-button'>
-            <button className='mode-button'>dark</button>
-          </div> */}
-
+          {/* make animation + darkmode */}
           <div className='banner__content-button'>
             <div className='slider' />
             <div className='button-text'>

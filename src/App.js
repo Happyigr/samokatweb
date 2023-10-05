@@ -1,5 +1,5 @@
 import React from "react";
-import { Banner, Navbar } from "./blocks";
+import { Banner, Navbar, Info } from "./blocks";
 
 import "./App.css";
 import "./index.css";
@@ -9,6 +9,7 @@ function App() {
     <div>
       <Navbar />
       <Banner />
+      <Info />
     </div>
   );
 }
