@@ -1,22 +1,32 @@
 import React from "react";
-
+import "./banner.css";
 import bike from "./../../assets/bike.png";
 
 const text = {
-  main: "Стильный электросамокатс мощным аккумулятором",
-  info: "Улучшенная производительность для дальних путешествий.\n Работает так же просто, как и выглядит.",
+  main: "Стильный электросамокат с мощным аккумулятором",
+  info: "Улучшенная производительность\nдля дальних путешествий.\nРаботает так же просто,\nкак и выглядит.",
 };
 
 export default function Banner() {
   return (
-    <div className='banner'>
-      <div className='banner__content'>
-        <div className='banner__content-text'>
-          <h1 className='banner__content-text-header'>{text.main}</h1>
-          <h2 className='banner__content-text-info'>{text.info}</h2>
-        </div>
-        <div className='banner__content-button'>
-          <button className='dark-light-mode-button'>dark</button>
+    <div>
+      <div className='banner'>
+        <div className='banner__content'>
+          <div className='banner__content-text'>
+            <h1 className='banner__content-text-header'>{text.main}</h1>
+            <h2 className='banner__content-text-info'>{text.info}</h2>
+          </div>
+          {/* <div className='banner__content-button'>
+            <button className='mode-button'>dark</button>
+          </div> */}
+
+          <div className='banner__content-button'>
+            <div className='slider' />
+            <div className='button-text'>
+              <div className='white-text'>Белый</div>
+              <div className='black-text'>Чёрный</div>
+            </div>
+          </div>
         </div>
       </div>
       <div className='banner__bike'>
