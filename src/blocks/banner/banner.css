@@ -16,6 +16,14 @@
   flex-shrink: 0;
 }
 
+.leftup__blur {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: -2;
+  flex-shrink: 0;
+}
+
 .banner__bike-image {
   width: 49vw;
 }

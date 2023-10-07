@@ -1,6 +1,7 @@
 import React from "react";
 import "./banner.css";
 import bike from "./../../assets/bike.png";
+import blur1 from "./../../assets/rightleftblur.png";
 
 const text = {
   main: "Стильный электросамокат\nс мощным аккумулятором",
@@ -28,6 +29,9 @@ export default function Banner() {
       </div>
       <div className='banner__bike'>
         <img className='banner__bike-image' alt={bike} src={bike} />
+      </div>
+      <div className='leftup__blur'>
+        <img alt={blur1} src={blur1} />
       </div>
     </div>
   );
