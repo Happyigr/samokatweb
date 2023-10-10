@@ -10,20 +10,18 @@ const text = {
 
 export default function Banner() {
   return (
-    <div>
-      <div className='banner'>
-        <div className='banner__content'>
-          <div className='banner__content-text'>
-            <h1 className='banner__content-text-header'>{text.main}</h1>
-            <h2 className='banner__content-text-info'>{text.info}</h2>
-          </div>
-          {/* make animation + darkmode */}
-          <div className='banner__content-button'>
-            <div className='slider' />
-            <div className='button-text'>
-              <div className='white-text'>Белый</div>
-              <div className='black-text'>Чёрный</div>
-            </div>
+    <div className='banner'>
+      <div className='banner__content'>
+        <div className='banner__content-text'>
+          <h1 className='banner__content-text-header'>{text.main}</h1>
+          <h2 className='banner__content-text-info'>{text.info}</h2>
+        </div>
+        {/* make animation + darkmode */}
+        <div className='banner__content-button'>
+          <div className='slider' />
+          <div className='button-text'>
+            <div className='white-text'>Белый</div>
+            <div className='black-text'>Чёрный</div>
           </div>
         </div>
       </div>

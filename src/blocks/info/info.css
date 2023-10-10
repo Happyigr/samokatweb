@@ -1,18 +1,28 @@
 .info {
   display: grid;
+  grid-template-areas: "header" "text1";
+  gap: 0px;
+  padding: 0 9rem;
+  margin-top: 10rem;
 }
 
 .blur {
   z-index: -2;
-  grid-area: 1/1/2/3;
+  grid-area: header;
   border-radius: 863.82px;
   opacity: 0.5;
   background: linear-gradient(120deg, #fc4f1f80 12.77%, rgba(252, 80, 31, 0) 59.51%);
   filter: blur(140px);
 }
 
+.lineinfo {
+  /* grid-area: text1; */
+  z-index: -2;
+  width: 100;
+}
+
 .info__content {
-  grid-area: 1/1/2/3;
+  grid-area: header;
   display: flex;
   flex-direction: column;
 }
@@ -31,7 +41,6 @@
   grid-template-rows: 1fr;
   grid-column-gap: 3rem;
   grid-row-gap: 0px;
-  margin-bottom: 15rem;
 }
 
 .karoussel-speed {

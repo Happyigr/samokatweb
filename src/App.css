@@ -8,10 +8,14 @@
 body {
   font-family: var(--font-family);
   background: var(--color-bg);
-  margin: 3rem 9rem;
+  /* margin: 3rem 9rem; */
 }
 
 a {
   color: unset;
   text-decoration: none;
+}
+
+div {
+  white-space: pre-wrap;
 }

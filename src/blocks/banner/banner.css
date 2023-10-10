@@ -4,7 +4,8 @@
   grid-template-rows: 1fr;
   grid-column-gap: 0px;
   grid-row-gap: 0px;
-  margin-bottom: 15rem;
+  padding: 0 9rem;
+  margin-top: 10rem;
 }
 
 /* fix the samokat */

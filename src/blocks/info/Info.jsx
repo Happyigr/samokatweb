@@ -3,7 +3,7 @@ import "./info.css";
 import foto_speed from "../../assets/speed.png";
 import foto_energy from "../../assets/energy.png";
 import foto_battery from "../../assets/battery.png";
-import blur from "../../assets/blurinfo.png";
+import lineinfo from "../../assets/lineinfo.png";
 
 const text = {
   header: "Мощная батарея и экономичный расход\nзаряда позволяют преодолевать\nрасстояния до 45 км",
@@ -27,6 +27,9 @@ export default function Info() {
   return (
     <div className='info'>
       <div className='blur' />
+      <div className='lineinfo'>
+        <img className='lineinfo-image' alt={lineinfo} src={lineinfo}></img>
+      </div>
       <div className='info__content'>
         <div className='info__content-header'>{text.header}</div>
         <div className='info__content-karoussel'>
@@ -43,7 +46,7 @@ export default function Info() {
             <div className='orange-line-connect' />
             <div className='karoussel-text'>{text.karoussel.energy.text}</div>
             <div className='karoussel-foto'>
-              <img src={foto_energy} alt={foto_energy} />
+              {/* <img src={foto_energy} alt={foto_energy} /> */}
             </div>
           </div>
           <div className='karoussel-battery'>
@@ -51,7 +54,7 @@ export default function Info() {
             <div className='orange-line' />
             <div className='karoussel-text'>{text.karoussel.battery.text}</div>
             <div className='karoussel-foto'>
-              <img src={foto_battery} alt={foto_battery} />
+              {/* <img src={foto_battery} alt={foto_battery} /> */}
             </div>
           </div>
         </div>
